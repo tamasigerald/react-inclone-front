@@ -28,7 +28,7 @@ export default function SignInPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newUser = user;
-        axios.post('/signin', newUser)
+        axios.post(process.env.REACT_APP_BASE_URL + '/signin', newUser)
         .then(function(res) {
             setIsLoading(true)
             localStorage.setItem('token', res.data.token);

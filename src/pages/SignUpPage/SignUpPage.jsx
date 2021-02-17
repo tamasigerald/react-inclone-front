@@ -24,7 +24,7 @@ export default function SignUpPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newUser = user;
-        axios.post('/signup', newUser)
+        axios.post(process.env.REACT_APP_BASE_URL + '/signup', newUser)
         .then(function(res) {
                 addToast(res.data.message, { appearance: 'success', autoDismiss: true });
                 setTimeout(() => { history.push('/signin') }, 1500)

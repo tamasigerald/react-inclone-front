@@ -36,7 +36,7 @@ export default function UserPage() {
 
     const getUserPosts = () => {
         setIsLoading(true);
-        axios.get('/userposts', config)
+        axios.get(process.env.REACT_APP_BASE_URL + '/userposts', config)
         .then(function(res) {
             setUserPosts(res.data.posts);
             setIsLoading(false)

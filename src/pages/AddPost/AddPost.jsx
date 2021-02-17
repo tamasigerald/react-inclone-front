@@ -44,7 +44,7 @@ export default function AddPost() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('/createpost', post, config)
+        axios.post(process.env.REACT_APP_BASE_URL + '/createpost', post, config)
         .then(function(res) {
                 addToast(res.data.message, { appearance: 'success', autoDismiss: true });
                 setTimeout(() => { history.push('/') }, 1500)

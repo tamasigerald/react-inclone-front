@@ -39,7 +39,7 @@ export default function PostCard(props) {
     }
 
     const likePost = (postId) => {
-        axios.put('/like', {postId: postId}, config)
+        axios.put(process.env.REACT_APP_BASE_URL + '/like', {postId: postId}, config)
         .then(function(res) {
             setNumLikes(res.data.likes.length);
         })
@@ -49,7 +49,7 @@ export default function PostCard(props) {
     }
 
     const unlikePost = (postId) => {
-        axios.put('/unlike', {postId: postId}, config)
+        axios.put(process.env.REACT_APP_BASE_URL + '/unlike', {postId: postId}, config)
         .then(function(res) {
             setNumLikes(res.data.likes.length);
         })

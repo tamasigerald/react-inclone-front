@@ -11,7 +11,7 @@ export default function HomePage() {
 
     const getPosts = () => {
         setIsLoading(true)
-        axios.get('/allposts')
+        axios.get(process.env.REACT_APP_BASE_URL + '/allposts')
         .then(function(res) {
             setPosts(res.data.posts);
             setIsLoading(false);
