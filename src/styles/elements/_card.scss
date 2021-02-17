@@ -1,0 +1,41 @@
+.c-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: $c-white;
+    margin: 2.8rem 0;
+
+
+    &__figure {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        height: 28rem;
+        width: 100%;
+    }
+    &__photo {
+        object-fit: cover;
+        max-height: 100%;
+        width: 100%;
+    }
+    &__likes {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        width: 100%;
+        margin-top: 1rem;
+        &__text {
+            margin-left: 1rem;
+        }
+    }
+    &__body {
+        font-family: $f-family;
+        width: 100%;
+        white-space: pre-wrap;
+    }
+    
+
+    background-color: $c-primary;
+}

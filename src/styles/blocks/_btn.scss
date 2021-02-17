@@ -1,0 +1,22 @@
+.btn {
+    border: 0;
+    padding: 0.9rem 2rem;
+    border-radius: $b-radius;
+    cursor: pointer;
+    &--primary {
+        background-color: $c-primary;
+        color: $c-white;
+    }
+    &--success {
+        background-color: $c-secondary;
+    }
+    &--red {
+        background-color: $c-red;
+        color: $c-white;
+    }
+    &--form {
+        align-self: flex-end;
+        margin-top: 2.5rem;
+    }
+}
+

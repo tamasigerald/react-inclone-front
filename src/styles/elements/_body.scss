@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+}
+
+body {
+    background-color: $c-white;
+    font-family: $f-family;
+    font-size: 2rem;
+    font-weight: $f-w-regular;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // min-height: 100vh;
+}

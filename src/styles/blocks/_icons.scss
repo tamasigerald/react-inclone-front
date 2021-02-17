@@ -1,0 +1,21 @@
+.icon {
+    height: 100%;
+    width: auto;
+    color: $c-primary;
+    transform: scale(0.45);
+    cursor: pointer;
+}
+
+.link {
+    height: 100%;
+}
+
+.like {
+    color: $c-white;
+    transform: scale(1.2);
+    margin: 0 0.8rem;
+    cursor: pointer;
+    &--active {
+        color: $c-red;
+    }
+}

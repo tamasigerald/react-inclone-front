@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+    height: 60px;
+    width: 100vw;
+
+    background-color: $c-white;
+    border-bottom: 1px solid $c-primary;
+    color: $c-primary;
+    &__logo {
+        font-family: $f-logo;
+        font-size: 4.5rem;
+        font-weight: $f-w-bold;
+        margin-left: 2rem;
+    }
+}
